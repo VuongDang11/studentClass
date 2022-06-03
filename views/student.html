@@ -1,0 +1,28 @@
+<include href="views/header.html"></include>
+<body>
+<div class="containerOne">
+
+    <h2></h2>
+    <div class="container">
+        <h1>Student</h1>
+        <div class="row">
+        <div class="col-6">
+            <form>
+                <div class="form-group" id="group">
+
+                    <p class="form-control">SID: {{ @SESSION.order->getSid() }} </p>
+                    <p class="form-control">Last: {{ @SESSION.order->getLast() }} </p>
+                    <p class="form-control">First: {{ @SESSION.order->getFirst() }} </p>
+                    <p class="form-control">Birth: {{ @SESSION.order->getBirthdate() }} </p>
+                    <p class="form-control">GPA: {{ @SESSION.order->getGpa() }} </p>
+                    <p class="form-control">Advisor: {{ @SESSION.order->getAdvisor() }} </p>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    <a href="{{ @BASE }}">Return to Home</a>
+    </div>
+</div>
+</body>
+</html>
